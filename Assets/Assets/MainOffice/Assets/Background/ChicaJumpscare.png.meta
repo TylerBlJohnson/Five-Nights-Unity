@@ -1,0 +1,571 @@
+fileFormatVersion: 2
+guid: 21714877a419fd54f867bff011399954
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5394704991512601670
+    second: ChicaJumpscare_0
+  - first:
+      213: -1235788751172076924
+    second: ChicaJumpscare_1
+  - first:
+      213: -3922031629239750586
+    second: ChicaJumpscare_2
+  - first:
+      213: -578377627315105629
+    second: ChicaJumpscare_3
+  - first:
+      213: 2312572910425609971
+    second: ChicaJumpscare_4
+  - first:
+      213: -3223106993005930037
+    second: ChicaJumpscare_5
+  - first:
+      213: 9216836201427038155
+    second: ChicaJumpscare_6
+  - first:
+      213: 1471552067280966698
+    second: ChicaJumpscare_7
+  - first:
+      213: -888863851492019066
+    second: ChicaJumpscare_8
+  - first:
+      213: -2904969103685692380
+    second: ChicaJumpscare_9
+  - first:
+      213: -3499126061026783424
+    second: ChicaJumpscare_10
+  - first:
+      213: 8401956467357584532
+    second: ChicaJumpscare_11
+  - first:
+      213: -4378051377762387726
+    second: ChicaJumpscare_12
+  - first:
+      213: 6669803546861164630
+    second: ChicaJumpscare_13
+  - first:
+      213: 451118662905855720
+    second: ChicaJumpscare_14
+  - first:
+      213: 5639784220772417788
+    second: ChicaJumpscare_15
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: ChicaJumpscare_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10832
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644a22f7b97ddda40800000000000000
+      internalID: 5394704991512601670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10110
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48af6f4ada899dee0800000000000000
+      internalID: -1235788751172076924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9388
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 640715553052299c0800000000000000
+      internalID: -3922031629239750586
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8666
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a099d1cc9039f7f0800000000000000
+      internalID: -578377627315105629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7944
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f61c1b3fc8e71020800000000000000
+      internalID: 2312572910425609971
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7222
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc9ddc044493543d0800000000000000
+      internalID: -3223106993005930037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6500
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bcfe40b31b7c8ef70800000000000000
+      internalID: 9216836201427038155
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5778
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a2416cefec00c6410800000000000000
+      internalID: 1471552067280966698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5056
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 684f126590f1aa3f0800000000000000
+      internalID: -888863851492019066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4334
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424545bcdf97fa7d0800000000000000
+      internalID: -2904969103685692380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3612
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04fcf2cf26b907fc0800000000000000
+      internalID: -3499126061026783424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2890
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49c052f34eeb99470800000000000000
+      internalID: 8401956467357584532
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2168
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f83014c7790e33c0800000000000000
+      internalID: -4378051377762387726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1446
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658dc4cdcf6ef8c50800000000000000
+      internalID: 6669803546861164630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 724
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ee7d06a802b24600800000000000000
+      internalID: 451118662905855720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ChicaJumpscare_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf04ef03ed9844e40800000000000000
+      internalID: 5639784220772417788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 2cd5f98ada3551a43ab8385775b19817
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      ChicaJumpscare_8: -888863851492019066
+      ChicaJumpscare_14: 451118662905855720
+      ChicaJumpscare_11: 8401956467357584532
+      ChicaJumpscare_7: 1471552067280966698
+      ChicaJumpscare_10: -3499126061026783424
+      ChicaJumpscare_0: 5394704991512601670
+      ChicaJumpscare_15: 5639784220772417788
+      ChicaJumpscare_2: -3922031629239750586
+      ChicaJumpscare_12: -4378051377762387726
+      ChicaJumpscare_4: 2312572910425609971
+      ChicaJumpscare_5: -3223106993005930037
+      ChicaJumpscare_13: 6669803546861164630
+      ChicaJumpscare_1: -1235788751172076924
+      ChicaJumpscare_3: -578377627315105629
+      ChicaJumpscare_6: 9216836201427038155
+      ChicaJumpscare_9: -2904969103685692380
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

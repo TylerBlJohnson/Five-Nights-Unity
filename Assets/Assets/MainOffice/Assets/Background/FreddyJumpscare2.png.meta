@@ -1,0 +1,521 @@
+fileFormatVersion: 2
+guid: 75bef11fcad03534d82829c525dc8f2c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5290820029026294086
+    second: FreddyJumpscare2_0
+  - first:
+      213: -6621244106296908724
+    second: FreddyJumpscare2_1
+  - first:
+      213: -548832128072807438
+    second: FreddyJumpscare2_2
+  - first:
+      213: 9151958697875531120
+    second: FreddyJumpscare2_3
+  - first:
+      213: 4908143417410754979
+    second: FreddyJumpscare2_4
+  - first:
+      213: 6074933242390142788
+    second: FreddyJumpscare2_5
+  - first:
+      213: -2171083369627128639
+    second: FreddyJumpscare2_6
+  - first:
+      213: 673481983829543458
+    second: FreddyJumpscare2_7
+  - first:
+      213: 6783992422034640199
+    second: FreddyJumpscare2_8
+  - first:
+      213: 58450605730356556
+    second: FreddyJumpscare2_9
+  - first:
+      213: 2571756767489060466
+    second: FreddyJumpscare2_10
+  - first:
+      213: -2099505839358724876
+    second: FreddyJumpscare2_11
+  - first:
+      213: -5180631923658028921
+    second: FreddyJumpscare2_12
+  - first:
+      213: 6916884167752906082
+    second: FreddyJumpscare2_13
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FreddyJumpscare2_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9388
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab6ad5f273b3396b0800000000000000
+      internalID: -5290820029026294086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8666
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c442601f09d9c14a0800000000000000
+      internalID: -6621244106296908724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7944
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fb06ec56182268f0800000000000000
+      internalID: -548832128072807438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7222
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 075eae152f9420f70800000000000000
+      internalID: 9151958697875531120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6500
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a990750f6a3d1440800000000000000
+      internalID: 4908143417410754979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5778
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 44f50eaf89f7e4450800000000000000
+      internalID: 6074933242390142788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5056
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cced9f9d23ced1e0800000000000000
+      internalID: -2171083369627128639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4334
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22a09c8cb40b85900800000000000000
+      internalID: 673481983829543458
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3612
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74d015a2a25952e50800000000000000
+      internalID: 6783992422034640199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2890
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4dd6772488afc000800000000000000
+      internalID: 58450605730356556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2168
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27e64ee7727b0b320800000000000000
+      internalID: 2571756767489060466
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1446
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f43a21109e0dd2e0800000000000000
+      internalID: -2099505839358724876
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 724
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 788805ea6b2ba18b0800000000000000
+      internalID: -5180631923658028921
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FreddyJumpscare2_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2657f6bd085bdff50800000000000000
+      internalID: 6916884167752906082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 400426b618ae2c74295df09065bb1263
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FreddyJumpscare2_7: 673481983829543458
+      FreddyJumpscare2_8: 6783992422034640199
+      FreddyJumpscare2_3: 9151958697875531120
+      FreddyJumpscare2_12: -5180631923658028921
+      FreddyJumpscare2_1: -6621244106296908724
+      FreddyJumpscare2_13: 6916884167752906082
+      FreddyJumpscare2_4: 4908143417410754979
+      FreddyJumpscare2_0: -5290820029026294086
+      FreddyJumpscare2_2: -548832128072807438
+      FreddyJumpscare2_10: 2571756767489060466
+      FreddyJumpscare2_9: 58450605730356556
+      FreddyJumpscare2_5: 6074933242390142788
+      FreddyJumpscare2_11: -2099505839358724876
+      FreddyJumpscare2_6: -2171083369627128639
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

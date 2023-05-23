@@ -1,0 +1,971 @@
+fileFormatVersion: 2
+guid: 4e1e705ac93fb504d884c187e36b76fb
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -5293664168822827069
+    second: West Hall Foxy_0
+  - first:
+      213: 2300493242027368831
+    second: West Hall Foxy_1
+  - first:
+      213: -8398503735764611986
+    second: West Hall Foxy_2
+  - first:
+      213: 5169146549988385081
+    second: West Hall Foxy_3
+  - first:
+      213: 937903544704406915
+    second: West Hall Foxy_4
+  - first:
+      213: 8681476259172399820
+    second: West Hall Foxy_5
+  - first:
+      213: -886180467726088250
+    second: West Hall Foxy_6
+  - first:
+      213: 1095189966975458371
+    second: West Hall Foxy_7
+  - first:
+      213: -5830916441976197599
+    second: West Hall Foxy_8
+  - first:
+      213: 3185218094043323788
+    second: West Hall Foxy_9
+  - first:
+      213: 6888250017655546628
+    second: West Hall Foxy_10
+  - first:
+      213: -5286981835393342875
+    second: West Hall Foxy_11
+  - first:
+      213: 5636326946659972329
+    second: West Hall Foxy_12
+  - first:
+      213: 748975189932924075
+    second: West Hall Foxy_13
+  - first:
+      213: -1198596235993338085
+    second: West Hall Foxy_14
+  - first:
+      213: -4159484819346955324
+    second: West Hall Foxy_15
+  - first:
+      213: -8148620611379857689
+    second: West Hall Foxy_16
+  - first:
+      213: -2240503277315514137
+    second: West Hall Foxy_17
+  - first:
+      213: -2209503558403138298
+    second: West Hall Foxy_18
+  - first:
+      213: -2060894686899152945
+    second: West Hall Foxy_19
+  - first:
+      213: 372432145285848661
+    second: West Hall Foxy_20
+  - first:
+      213: 364862926324101750
+    second: West Hall Foxy_21
+  - first:
+      213: -3605331558701116672
+    second: West Hall Foxy_22
+  - first:
+      213: -6114293707465630864
+    second: West Hall Foxy_23
+  - first:
+      213: 3937381580624967950
+    second: West Hall Foxy_24
+  - first:
+      213: -3145221493328931644
+    second: West Hall Foxy_25
+  - first:
+      213: 8993171738193251174
+    second: West Hall Foxy_26
+  - first:
+      213: 2403702408475482723
+    second: West Hall Foxy_27
+  - first:
+      213: -1037529548182931945
+    second: West Hall Foxy_28
+  - first:
+      213: -8682954978827487653
+    second: West Hall Foxy_29
+  - first:
+      213: -4905362929960855910
+    second: West Hall Foxy_30
+  - first:
+      213: 6783022273319924588
+    second: West Hall Foxy_31
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: West Hall Foxy_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10830
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c71a194c702986b0800000000000000
+      internalID: -5293664168822827069
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_1
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 10830
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f716a334a6efcef10800000000000000
+      internalID: 2300493242027368831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10108
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6c85f87955827b80800000000000000
+      internalID: -8398503735764611986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_3
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 10108
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9316eff566f7cb740800000000000000
+      internalID: 5169146549988385081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9386
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3859faffd4a140d00800000000000000
+      internalID: 937903544704406915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_5
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 9386
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cca35f949acca7870800000000000000
+      internalID: 8681476259172399820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8664
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c70c4e4f87a3b3f0800000000000000
+      internalID: -886180467726088250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_7
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 8664
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34cd42fe875e23f00800000000000000
+      internalID: 1095189966975458371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7942
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12e2609b36c641fa0800000000000000
+      internalID: -5830916441976197599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_9
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 7942
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d59930bfa243c20800000000000000
+      internalID: 3185218094043323788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7220
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 403ef6245eaf79f50800000000000000
+      internalID: 6888250017655546628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_11
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 7220
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 562ef67480ed0a6b0800000000000000
+      internalID: -5286981835393342875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6498
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e431a5de71483e40800000000000000
+      internalID: 5636326946659972329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_13
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 6498
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac588d87f4e46a00800000000000000
+      internalID: 748975189932924075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5776
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1f2f74e21bbd5fe0800000000000000
+      internalID: -1198596235993338085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_15
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 5776
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c3e13e389a8646c0800000000000000
+      internalID: -4159484819346955324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5054
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e6f6492ab84aee80800000000000000
+      internalID: -8148620611379857689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_17
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 5054
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e0a285d32228e0e0800000000000000
+      internalID: -2240503277315514137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4332
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 60d5b6758344651e0800000000000000
+      internalID: -2209503558403138298
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_19
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 4332
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc7d2eb833b3663e0800000000000000
+      internalID: -2060894686899152945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3610
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e13ba10152b2500800000000000000
+      internalID: 372432145285848661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_21
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 3610
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 672f14bf5e0401500800000000000000
+      internalID: 364862926324101750
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_22
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2888
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0035d1a9c0a47fdc0800000000000000
+      internalID: -3605331558701116672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_23
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2888
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07bda1a944aa52ba0800000000000000
+      internalID: -6114293707465630864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_24
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2166
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e09315abfa364a630800000000000000
+      internalID: 3937381580624967950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_25
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 2166
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c4943647bde954d0800000000000000
+      internalID: -3145221493328931644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_26
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1444
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66b471b4c0a2ecc70800000000000000
+      internalID: 8993171738193251174
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_27
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 1444
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 36a9eeaea9aab5120800000000000000
+      internalID: 2403702408475482723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 722
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 716b59c7f54f991f0800000000000000
+      internalID: -1037529548182931945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_29
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 722
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b5637467372ff7780800000000000000
+      internalID: -8682954978827487653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a965059a766acebb0800000000000000
+      internalID: -4905362929960855910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: West Hall Foxy_31
+      rect:
+        serializedVersion: 2
+        x: 1600
+        y: 0
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c63fbc0d1d2222e50800000000000000
+      internalID: 6783022273319924588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 66871df415ca06e4586a8f6f547e05ad
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      West Hall Foxy_2: -8398503735764611986
+      West Hall Foxy_18: -2209503558403138298
+      West Hall Foxy_20: 372432145285848661
+      West Hall Foxy_26: 8993171738193251174
+      West Hall Foxy_25: -3145221493328931644
+      West Hall Foxy_4: 937903544704406915
+      West Hall Foxy_28: -1037529548182931945
+      West Hall Foxy_11: -5286981835393342875
+      West Hall Foxy_23: -6114293707465630864
+      West Hall Foxy_6: -886180467726088250
+      West Hall Foxy_31: 6783022273319924588
+      West Hall Foxy_10: 6888250017655546628
+      West Hall Foxy_29: -8682954978827487653
+      West Hall Foxy_8: -5830916441976197599
+      West Hall Foxy_1: 2300493242027368831
+      West Hall Foxy_22: -3605331558701116672
+      West Hall Foxy_27: 2403702408475482723
+      West Hall Foxy_3: 5169146549988385081
+      West Hall Foxy_21: 364862926324101750
+      West Hall Foxy_14: -1198596235993338085
+      West Hall Foxy_5: 8681476259172399820
+      West Hall Foxy_30: -4905362929960855910
+      West Hall Foxy_24: 3937381580624967950
+      West Hall Foxy_12: 5636326946659972329
+      West Hall Foxy_13: 748975189932924075
+      West Hall Foxy_16: -8148620611379857689
+      West Hall Foxy_9: 3185218094043323788
+      West Hall Foxy_17: -2240503277315514137
+      West Hall Foxy_19: -2060894686899152945
+      West Hall Foxy_15: -4159484819346955324
+      West Hall Foxy_0: -5293664168822827069
+      West Hall Foxy_7: 1095189966975458371
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

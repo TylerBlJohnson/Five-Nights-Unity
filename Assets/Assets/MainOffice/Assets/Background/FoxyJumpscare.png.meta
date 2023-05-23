@@ -1,0 +1,696 @@
+fileFormatVersion: 2
+guid: 0704bb65333c5a340a06a33809561195
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 4104774164220784309
+    second: FoxyJumpscare_0
+  - first:
+      213: -6122919516367010603
+    second: FoxyJumpscare_1
+  - first:
+      213: -7473382273885921228
+    second: FoxyJumpscare_2
+  - first:
+      213: 6563930601271243821
+    second: FoxyJumpscare_3
+  - first:
+      213: 988699516095625014
+    second: FoxyJumpscare_4
+  - first:
+      213: -8709925536729598636
+    second: FoxyJumpscare_5
+  - first:
+      213: 4824386180971926575
+    second: FoxyJumpscare_6
+  - first:
+      213: 8619619560976182013
+    second: FoxyJumpscare_7
+  - first:
+      213: -1707136569115280109
+    second: FoxyJumpscare_8
+  - first:
+      213: 7782687360792152371
+    second: FoxyJumpscare_9
+  - first:
+      213: 5697557418750642337
+    second: FoxyJumpscare_10
+  - first:
+      213: 3145471229022098854
+    second: FoxyJumpscare_11
+  - first:
+      213: 2037166008410215999
+    second: FoxyJumpscare_12
+  - first:
+      213: -3280394297834189703
+    second: FoxyJumpscare_13
+  - first:
+      213: 8120385777345144000
+    second: FoxyJumpscare_14
+  - first:
+      213: 2442958351006968468
+    second: FoxyJumpscare_15
+  - first:
+      213: 424229525038893252
+    second: FoxyJumpscare_16
+  - first:
+      213: -3570039865749067380
+    second: FoxyJumpscare_17
+  - first:
+      213: 3077806311561200144
+    second: FoxyJumpscare_18
+  - first:
+      213: 3231408032312020611
+    second: FoxyJumpscare_19
+  - first:
+      213: 6447015531565113345
+    second: FoxyJumpscare_20
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  cookieLightType: 1
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 16384
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: FoxyJumpscare_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 14442
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5bea495ba5617f830800000000000000
+      internalID: 4104774164220784309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 13720
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d443a6f325070ba0800000000000000
+      internalID: -6122919516367010603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_2
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12998
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4302456ea66394890800000000000000
+      internalID: -7473382273885921228
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_3
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 12276
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d24b61bca14c71b50800000000000000
+      internalID: 6563930601271243821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_4
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 11554
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637fa76b8f098bd00800000000000000
+      internalID: 988699516095625014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10832
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 455f02b1fd0202780800000000000000
+      internalID: -8709925536729598636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 10110
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f249220cba9a3f240800000000000000
+      internalID: 4824386180971926575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_7
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 9388
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfa6efe625a0f9770800000000000000
+      internalID: 8619619560976182013
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 8666
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31dfdcec5580f48e0800000000000000
+      internalID: -1707136569115280109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_9
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7944
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33940f19be8a10c60800000000000000
+      internalID: 7782687360792152371
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 7222
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a80600194ac11f40800000000000000
+      internalID: 5697557418750642337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 6500
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a5d219da65f6ab20800000000000000
+      internalID: 3145471229022098854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_12
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5778
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f369ac7f0b7754c10800000000000000
+      internalID: 2037166008410215999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_13
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 5056
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97c406234c2b972d0800000000000000
+      internalID: -3280394297834189703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_14
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 4334
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c4aac147d761b070800000000000000
+      internalID: 8120385777345144000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3612
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49a28d84da127e120800000000000000
+      internalID: 2442958351006968468
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2890
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c80d2f518a23e500800000000000000
+      internalID: 424229525038893252
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_17
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2168
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c892b0038aba47ec0800000000000000
+      internalID: -3570039865749067380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_18
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1446
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0128f00988096ba20800000000000000
+      internalID: 3077806311561200144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_19
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 724
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38e4d421c7448dc20800000000000000
+      internalID: 3231408032312020611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FoxyJumpscare_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2
+        width: 1600
+        height: 720
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1006d5cd776687950800000000000000
+      internalID: 6447015531565113345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: a7edf3a629509bf45a49f0338825b44c
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      FoxyJumpscare_15: 2442958351006968468
+      FoxyJumpscare_19: 3231408032312020611
+      FoxyJumpscare_11: 3145471229022098854
+      FoxyJumpscare_1: -6122919516367010603
+      FoxyJumpscare_9: 7782687360792152371
+      FoxyJumpscare_6: 4824386180971926575
+      FoxyJumpscare_8: -1707136569115280109
+      FoxyJumpscare_7: 8619619560976182013
+      FoxyJumpscare_5: -8709925536729598636
+      FoxyJumpscare_10: 5697557418750642337
+      FoxyJumpscare_4: 988699516095625014
+      FoxyJumpscare_14: 8120385777345144000
+      FoxyJumpscare_13: -3280394297834189703
+      FoxyJumpscare_17: -3570039865749067380
+      FoxyJumpscare_2: -7473382273885921228
+      FoxyJumpscare_16: 424229525038893252
+      FoxyJumpscare_0: 4104774164220784309
+      FoxyJumpscare_12: 2037166008410215999
+      FoxyJumpscare_18: 3077806311561200144
+      FoxyJumpscare_20: 6447015531565113345
+      FoxyJumpscare_3: 6563930601271243821
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
