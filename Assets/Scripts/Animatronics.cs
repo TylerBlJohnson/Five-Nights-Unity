@@ -531,10 +531,10 @@ public class Animatronics : MonoBehaviour
     {
         //Set difficulty
         if (TempData.loadNight == 0) { //loadNight will be 0 if the "FNaF Night" scene is launched directly. This is used for testing.
-            bonnieAI = 20;
-            chicaAI = 20;
-            freddyAI = 20;
-            foxyAI = 20;
+            bonnieAI = 0;
+            chicaAI = 0;
+            freddyAI = 0;
+            foxyAI = 0;
         }
         else {
             bonnieAI = TempData.bonnieAI;
