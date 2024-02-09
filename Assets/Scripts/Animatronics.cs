@@ -55,7 +55,7 @@ public class Animatronics : MonoBehaviour
     private float foxyWait;
     private float foxyPenalty;
     private static float goldenFreddyMoveTimer = 1.0f;
-    private int goldenFreddyChance = 100000; //Golden Freddy has a 1/X chance to appear every second.
+    private int goldenFreddyChance = 32768; //Golden Freddy has a 1/X chance to appear every second.
     private float goldenFreddyWait;
     private GoldenFreddyStates goldenFreddyStatus;
     private static float goldenFreddyKillTimer = 5.0f;

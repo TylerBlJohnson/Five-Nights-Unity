@@ -25,7 +25,7 @@ public class Force16By9 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (!TempData.didFullscreenSwitch && ((Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt)) && Input.GetKey(KeyCode.Return))) {
+        if (!TempData.didFullscreenSwitch && (Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt)) && Input.GetKey(KeyCode.Return)) {
             //Debug.Log("Fullscreen switch detected");
             TempData.didFullscreenSwitch = true;
             if (!Screen.fullScreen) {
@@ -65,19 +65,14 @@ public class Force16By9 : MonoBehaviour
             Debug.Log("Current Ratio: 16:" + ratioHeight);
         }
 
-        if (!camera.orthographic && false) {
-            camera.fieldOfView = (69.5f / ratioHeight) * 9;
-        }
-        else {
             // if scaled height is less than current height, add letterbox
-            if (scaleheight < 1.0f)
-            {  
-                DoLetterBox(camera, scaleheight);
-            }
-            else // add pillarbox
-            {
-                DoPillarBox(camera, scaleheight);
-            }
+        if (scaleheight < 1.0f) 
+        {  
+            DoLetterBox(camera, scaleheight);
+        }
+        else // add pillarbox
+        {
+            DoPillarBox(camera, scaleheight);
         }
     }
 
