@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Force16By9 : MonoBehaviour
 {
+
+    [SerializeField]
+    private bool debug = false;
+
     /*
     void Start () 
     {
@@ -53,31 +57,52 @@ public class Force16By9 : MonoBehaviour
         // obtain camera component so we can modify its viewport
         Camera camera = GetComponent<Camera>();
 
-        // if scaled height is less than current height, add letterbox
-        if (scaleheight < 1.0f)
-        {  
-            Rect rect = camera.rect;
+        float ratioHeight = (float)Screen.height / (float)Screen.width * 16;
 
-            rect.width = 1.0f;
-            rect.height = scaleheight;
-            rect.x = 0;
-            rect.y = (1.0f - scaleheight) / 2.0f;
-            
-            camera.rect = rect;
+        if (debug) {
+            Debug.Log("FoV: " + camera.fieldOfView);
+            Debug.Log("Projection mode: " + camera.orthographic);
+            Debug.Log("Current Ratio: 16:" + ratioHeight);
         }
-        else // add pillarbox
-        {
-            float scalewidth = 1.0f / scaleheight;
 
-            Rect rect = camera.rect;
-
-            rect.width = scalewidth;
-            rect.height = 1.0f;
-            rect.x = (1.0f - scalewidth) / 2.0f;
-            rect.y = 0;
-
-            camera.rect = rect;
+        if (!camera.orthographic && false) {
+            camera.fieldOfView = (69.5f / ratioHeight) * 9;
         }
+        else {
+            // if scaled height is less than current height, add letterbox
+            if (scaleheight < 1.0f)
+            {  
+                DoLetterBox(camera, scaleheight);
+            }
+            else // add pillarbox
+            {
+                DoPillarBox(camera, scaleheight);
+            }
+        }
+    }
+
+    void DoLetterBox(Camera camera, float scaleheight) {
+        Rect rect = camera.rect;
+
+        rect.width = 1.0f;
+        rect.height = scaleheight;
+        rect.x = 0;
+        rect.y = (1.0f - scaleheight) / 2.0f;
+                
+        camera.rect = rect;
+    }
+
+    void DoPillarBox(Camera camera, float scaleheight) {
+        float scalewidth = 1.0f / scaleheight;
+
+        Rect rect = camera.rect;
+
+        rect.width = scalewidth;
+        rect.height = 1.0f;
+        rect.x = (1.0f - scalewidth) / 2.0f;
+        rect.y = 0;
+
+        camera.rect = rect;
     }
     //*/
 }

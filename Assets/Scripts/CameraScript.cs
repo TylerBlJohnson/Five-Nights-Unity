@@ -18,8 +18,9 @@ public class CameraScript : MonoBehaviour
     [SerializeField] private GameObject monitorDownPlane;
     private bool cameraIsDown = true;
     private bool monitorCanFlip = true;
-    private float officeLookSpeed = 9.0f;
+    private readonly float officeLookSpeed = 9.0f;
     private bool forceCameraLeft = false;
+    private readonly float officeWidth = 2.05f; //How far to the left or right the camera can move, as a multiplier
     private LookDirection lookDirection = LookDirection.Straight;
     private Ray ray;
     private RaycastHit hit;
@@ -92,22 +93,22 @@ public class CameraScript : MonoBehaviour
         Transform cameraPosition = mainCamera.transform;
         switch(lookDirection) {
             case(LookDirection.Left):
-                cameraPosition.Translate(officeLookSpeed * Time.deltaTime, 0, 0);
+                cameraPosition.Translate(officeLookSpeed * officeWidth * Time.deltaTime, 0, 0);
                 break;
             
             case(LookDirection.Right):
-                cameraPosition.Translate(-officeLookSpeed * Time.deltaTime, 0, 0);
+                cameraPosition.Translate(-officeLookSpeed * officeWidth * Time.deltaTime, 0, 0);
                 break;
         }
 
         //if the camera is too far left, move it back
-        if (cameraPosition.position.x > 2.2f) {
-            cameraPosition.position = new Vector3(2.2f, cameraPosition.position.y, cameraPosition.position.z);
+        if (cameraPosition.position.x > 2.2f * officeWidth) {
+            cameraPosition.position = new Vector3(2.2f * officeWidth, cameraPosition.position.y, cameraPosition.position.z);
         }
 
         //if the camera is too far right, move it back
-        if (cameraPosition.position.x < -2.2f) {
-            cameraPosition.position = new Vector3(-2.2f, cameraPosition.position.y, cameraPosition.position.z);
+        if (cameraPosition.position.x < -2.2f * officeWidth) {
+            cameraPosition.position = new Vector3(-2.2f * officeWidth, cameraPosition.position.y, cameraPosition.position.z);
         }
 
         //if the power outage Freddy jumpscare is playing, keep the camera centered
