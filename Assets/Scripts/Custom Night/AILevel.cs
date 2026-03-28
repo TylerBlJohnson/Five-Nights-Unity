@@ -92,4 +92,9 @@ public class AILevel : MonoBehaviour
     public int GetLevel() {
         return level;
     }
+
+    public void SetLevel(int level)
+    {
+        this.level = level;
+    }
 }

@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using Random = UnityEngine.Random;
 
 //Handles the vast majority of the Night behavior.
 public class GameController : MonoBehaviour
@@ -107,6 +109,10 @@ public class GameController : MonoBehaviour
 
     [SerializeField] private GameObject hallucinationOverlay;
 
+    [SerializeField] private Camera cylinderCamera; //The camera looking at the cylinder (Office Camera)
+    [SerializeField] private Camera orthographicCamera; //The camera rendering the game to the cylinder texture (Office Camera Render)
+    [SerializeField] private Collider cylinderCollider; //Reference to your cylinder's collider
+
     //Detects where the mouse is
     private Ray ray;
     private RaycastHit hit;
@@ -151,65 +157,47 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //Where the mouse is pointing
-        ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-
-        //If the mouse is pointing at something
-        if (Physics.Raycast(ray, out hit) && Input.GetKeyDown(KeyCode.Mouse0))
+        if (Input.GetKeyDown(KeyCode.Mouse0))
         {
-            //click the "leftSideLightButton" GameObject
-            if (hit.collider.name == leftSideLightButton.name) {
-                if (bonnieLoc == CameraMonitor.Office) {
-                    errorAudio.Play();
-                } else {
-                    rightLightOn = false;
-                    leftLightOn = !leftLightOn;
-
-                    if (bonnieWindowScare && leftLightOn) {
-                        bonnieWindowScare = false;
-                        windowStingerAudio.Play();
-                    }
+            // Raycast from the camera that's looking at the cylinder
+            ray = cylinderCamera.ScreenPointToRay(Input.mousePosition);
+            
+            // Check if we hit the cylinder specifically
+            if (cylinderCollider.Raycast(ray, out hit, Mathf.Infinity))
+            {
+                //Debug.Log(hit.collider.name);
+                // Get UV coordinates from the cylinder hit
+                Vector2 uv = hit.textureCoord;
+                
+                // Debug to verify UVs are being read correctly
+                //Debug.Log("Cylinder hit at UV: " + uv);
+                
+                // Convert UV to a ray in the orthographic camera's space
+                Vector3 viewportPoint = new Vector3(uv.x, uv.y, orthographicCamera.nearClipPlane);
+                Vector3 worldPoint = orthographicCamera.ViewportToWorldPoint(viewportPoint);
+                
+                Ray orthoRay = new Ray(worldPoint, orthographicCamera.transform.forward);
+                RaycastHit orthoHit;
+                
+                // Raycast only against the Default layer (where your buttons are)
+                int defaultLayerMask = LayerMask.GetMask("Default");
+                
+                if (Physics.Raycast(orthoRay, out orthoHit, Mathf.Infinity, defaultLayerMask))
+                {
+                    // Debug.Log("Ortho raycast hit: " + orthoHit.collider.name);
+                    
+                    CheckButtonClick(orthoHit.collider.name);
                 }
             }
-
-            //click the "rightSideLightButton" GameObject
-            if (hit.collider.name == rightSideLightButton.name) {
-                if (chicaLoc == CameraMonitor.Office) {
-                    errorAudio.Play();
-                } else {
-                    rightLightOn = !rightLightOn;
-                    leftLightOn = false;
-
-                    if (chicaWindowScare && rightLightOn) {
-                        chicaWindowScare = false;
-                        windowStingerAudio.Play();
-                    }
+            else
+            {
+                // Fallback - try original raycast for HUD elements or other clickables
+                ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+                
+                if (Physics.Raycast(ray, out hit))
+                {
+                    CheckButtonClick(hit.collider.name);
                 }
-            }
-
-            //click the "leftSideDoorButton" GameObject
-            if (hit.collider.name == leftSideDoorButton.name) {
-                if (bonnieLoc == CameraMonitor.Office) {
-                    errorAudio.Play();
-                } else {
-                    TempData.leftDoorDown = !TempData.leftDoorDown;
-                    //Door animation happens at the end of Update()
-                }
-            }
-
-            //click the "rightSideDoorButton" GameObject
-            if (hit.collider.name == rightSideDoorButton.name) {
-                if (chicaLoc == CameraMonitor.Office) {
-                    errorAudio.Play();
-                } else {
-                    TempData.rightDoorDown = !TempData.rightDoorDown;
-                    //Door animation happens at the end of Update()
-                }
-            }
-
-            //click the "honkNosePoster" GameObject
-            if (hit.collider.name == honkNosePoster.name) {
-                honkAudio.Play();
             }
         }
 
@@ -298,6 +286,14 @@ public class GameController : MonoBehaviour
             hourHand++;
             Messenger<int>.Broadcast(GameEvent.TIME_CHANGE, hourHand);
             //Debug.Log("It is now " + hourHand + ":00AM");
+        }
+
+        //The CD+ night skip
+        if (Input.GetKeyDown(KeyCode.C)
+            && Input.GetKeyDown(KeyCode.D)
+            && Input.GetKeyDown(KeyCode.KeypadPlus) || Input.GetKeyDown(KeyCode.Equals) || Input.GetKeyDown(KeyCode.Plus))
+        {
+            hourHand = 6;
         }
 
         //A night lasts 6 hours
@@ -545,13 +541,17 @@ public class GameController : MonoBehaviour
 
     private IEnumerator TakeScreenShot()
     {
-        Camera _camera = cameras[(int)TempData.playerViewingCamera];
-        Texture2D _screenShot;
-        int resWidth = 1600;
-        int resHeight = 720;
+        yield return new WaitForEndOfFrame();
+        //Camera _camera = cameras[(int)TempData.playerViewingCamera];
+        Texture2D _screenShot = ScreenCapture.CaptureScreenshotAsTexture();
+        int resWidth = _screenShot.width;
+        int resHeight = _screenShot.height;
+        //Debug.Log($"Texture size: {resWidth}x{resHeight}");
+        //Debug.Log($"Screen size: {Screen.width}x{Screen.height}");
 
         //yield return new WaitForEndOfFrame();
-
+        //RenderTexture logic
+        /*
         RenderTexture rt = new RenderTexture(resWidth, resHeight, 24);
         _camera.targetTexture = rt;
         _screenShot= new Texture2D(resWidth, resHeight, TextureFormat.RGB24, false);
@@ -562,9 +562,11 @@ public class GameController : MonoBehaviour
         _camera.targetTexture = null;
         RenderTexture.active = null;
         Destroy(rt);
+        */
 
-        //100.8f is the pixels per unit size. Default is 100. Had to bump it up a smidge because the default had the screenshot zooming in. From what I'm eyeballing I can't see any zoom with this new value.
-        Sprite tempSprite = Sprite.Create(_screenShot, new Rect(0,0,resWidth,resHeight), new Vector2(0.5f, 0.5f), 100.8f);
+        //100.8f should be used over dynamicPPU when using RenderTexture logic.
+        float dynamicPPU = resHeight / (Camera.main.orthographicSize * 2) * 1.4f;
+        Sprite tempSprite = Sprite.Create(_screenShot, new Rect(0,0,resWidth,resHeight), new Vector2(0.5f, 0.5f), dynamicPPU);
         winScreenScreenShot.sprite = tempSprite;
         yield return new WaitForEndOfFrame();
     }
@@ -574,6 +576,62 @@ public class GameController : MonoBehaviour
         AudioSource[] allAudioSources = FindObjectsOfType(typeof(AudioSource)) as AudioSource[];
         foreach( AudioSource audioS in allAudioSources) {
             audioS.Stop();
+        }
+    }
+
+    private void CheckButtonClick(string colliderName)
+    {
+        //click the "leftSideLightButton" GameObject
+        if (colliderName == leftSideLightButton.name) {
+            if (bonnieLoc == CameraMonitor.Office) {
+                errorAudio.Play();
+            } else {
+                rightLightOn = false;
+                leftLightOn = !leftLightOn;
+
+                if (bonnieWindowScare && leftLightOn) {
+                    bonnieWindowScare = false;
+                    windowStingerAudio.Play();
+                }
+            }
+        }
+
+        //click the "rightSideLightButton" GameObject
+        if (colliderName == rightSideLightButton.name) {
+            if (chicaLoc == CameraMonitor.Office) {
+                errorAudio.Play();
+            } else {
+                rightLightOn = !rightLightOn;
+                leftLightOn = false;
+
+                if (chicaWindowScare && rightLightOn) {
+                    chicaWindowScare = false;
+                    windowStingerAudio.Play();
+                }
+            }
+        }
+
+        //click the "leftSideDoorButton" GameObject
+        if (colliderName == leftSideDoorButton.name) {
+            if (bonnieLoc == CameraMonitor.Office) {
+                errorAudio.Play();
+            } else {
+                TempData.leftDoorDown = !TempData.leftDoorDown;
+            }
+        }
+
+        //click the "rightSideDoorButton" GameObject
+        if (colliderName == rightSideDoorButton.name) {
+            if (chicaLoc == CameraMonitor.Office) {
+                errorAudio.Play();
+            } else {
+                TempData.rightDoorDown = !TempData.rightDoorDown;
+            }
+        }
+
+        //click the "honkNosePoster" GameObject
+        if (colliderName == honkNosePoster.name) {
+            honkAudio.Play();
         }
     }
 }

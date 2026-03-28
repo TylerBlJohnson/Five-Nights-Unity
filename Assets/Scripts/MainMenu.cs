@@ -13,11 +13,13 @@ public class MainMenu : MonoBehaviour
         Custom_Night
     }
 
-    private enum MenuCamera
+    public enum MenuCamera
     {
         Main_Menu,
         Night_Fade,
-        Custom_Night
+        Custom_Night,
+        Archipelago,
+        Archipelago_Main_Menu
     }
 
     public enum StoryBeat
@@ -29,13 +31,14 @@ public class MainMenu : MonoBehaviour
         Beat_420
     }
 
+	// AI levels in the order Freddy, Bonnie, Chica, Foxy
     private int[,] AILevels = new int[,] { 
-                                {0, 0, 0, 0}, 
-                                {0, 3, 1, 1}, 
-                                {1, 0, 5, 2}, 
-                                {1, 2, 4, 6}, 
-                                {3, 5, 7, 5}, 
-                                {4, 10, 12, 6}
+                                {0, 0, 0, 0},  //Night 1
+                                {0, 3, 1, 1},  //Night 2
+                                {1, 0, 5, 2},  //Night 3
+                                {1, 2, 4, 6},  //Night 4
+                                {3, 5, 7, 5},  //Night 5
+                                {4, 10, 12, 6} //Night 6
                             };
 
     private Item currentItem = Item.New_Game;
@@ -69,6 +72,9 @@ public class MainMenu : MonoBehaviour
 
     [SerializeField] private AILevel[] aiLevels;
 
+    private string APMenuKey = "AP";
+    private string inputSequence = "";
+
     private bool deleteHeld = false;
     private bool didDelete = false;
     private float deleteTime = 0.0f;
@@ -89,7 +95,6 @@ public class MainMenu : MonoBehaviour
     void Start()
     {
         anim = gameObject.GetComponent<Animator>();
-
         //1 in 1000 chance for the eyeless bonnie screen on loading the main menu
         if (Random.Range(0, 1000) == 0 && !TempData.playerWon) {
             SetBonnieScreenStart();
@@ -101,23 +106,29 @@ public class MainMenu : MonoBehaviour
 
         if (TempData.playerWon) { //Player loaded into main menu after having beaten the night
             TempData.playerWon = false;
-            if (TempData.loadNight < 5) {
-                progress = TempData.loadNight + 1;
-                PlayerPrefs.SetInt("Progress", progress);
-                DoContinueGame();
-            } else if (TempData.loadNight == 5) {
-                PlayerPrefs.SetInt("BeatGame", 1);
-                hiderPlane.SetActive(true);
-                PlayStoryBeat(StoryBeat.Beat_Game);
-            } else if (TempData.loadNight == 6) {
-                PlayerPrefs.SetInt("Beat6", 1);
-                hiderPlane.SetActive(true);
-                PlayStoryBeat(StoryBeat.Beat_6);
-            } else if (TempData.loadNight == 7 && TempData.bonnieAI == 20 && TempData.chicaAI == 20 && TempData.freddyAI == 20 && TempData.foxyAI == 20) {
-                PlayerPrefs.SetInt("Beat420", 1);
-                hiderPlane.SetActive(true);
-                PlayStoryBeat(StoryBeat.Beat_420);
+            if (!TempData.isArchipelagoGame) {
+                if (TempData.loadNight < 5) {
+                    progress = TempData.loadNight + 1;
+                    PlayerPrefs.SetInt("Progress", progress);
+                    DoContinueGame();
+                } else if (TempData.loadNight == 5) {
+                    PlayerPrefs.SetInt("BeatGame", 1);
+                    hiderPlane.SetActive(true);
+                    PlayStoryBeat(StoryBeat.Beat_Game);
+                } else if (TempData.loadNight == 6) {
+                    PlayerPrefs.SetInt("Beat6", 1);
+                    hiderPlane.SetActive(true);
+                    PlayStoryBeat(StoryBeat.Beat_6);
+                } else if (TempData.loadNight == 7 && TempData.bonnieAI == 20 && TempData.chicaAI == 20 && TempData.freddyAI == 20 && TempData.foxyAI == 20) {
+                    PlayerPrefs.SetInt("Beat420", 1);
+                    hiderPlane.SetActive(true);
+                    PlayStoryBeat(StoryBeat.Beat_420);
+                } else {
+                    menuMusic.Play();
+                    staticAudio.Play();
+                }
             } else {
+                ArchipelagoManager.Instance.DetermineCheck(ArchipelagoManager.CheckType.Night_Victory);
                 menuMusic.Play();
                 staticAudio.Play();
             }
@@ -171,7 +182,7 @@ public class MainMenu : MonoBehaviour
         ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
         //Upon clicking enter (return key)
-        if (Input.GetKeyDown(KeyCode.Return)) {
+        if (Input.GetKeyDown(KeyCode.Return) && cameras[(int)MenuCamera.Main_Menu].gameObject.activeSelf) {
             switch (currentItem)
             {
                 case (Item.New_Game):
@@ -295,6 +306,27 @@ public class MainMenu : MonoBehaviour
             didDelete = false;
             deleteTime = 0.0f;
         }
+
+        //---------------Swap to AP menu upon typing secret password--------------
+        if (Input.anyKeyDown)
+        {
+            string lastKey = Input.inputString.ToUpper();
+
+            if (!string.IsNullOrEmpty(lastKey))
+            {
+                inputSequence += lastKey;
+
+                if (inputSequence.Length > APMenuKey.Length)
+                {
+                    inputSequence = inputSequence.Substring(inputSequence.Length - APMenuKey.Length);
+                }
+
+                if (inputSequence == APMenuKey)
+                {
+                    SwitchToCamera(MenuCamera.Archipelago);
+                }
+            }
+        }
     }
 
     public void SetBonnieScreenComplete()
@@ -356,6 +388,20 @@ public class MainMenu : MonoBehaviour
         SwitchToCamera(MenuCamera.Custom_Night);
     }
 
+    //For use by the APMainMenu
+    public void RequestStartNight(int night)
+    {
+        TempData.loadNight = night;
+        if (night == 7)
+        {
+            aiLevels[0].SetLevel(20);
+            aiLevels[1].SetLevel(20);
+            aiLevels[2].SetLevel(20);
+            aiLevels[3].SetLevel(20);
+        }
+        StartNight();
+    }
+
     private void StartNight()
     {
         playerHasControl = false;
@@ -388,7 +434,14 @@ public class MainMenu : MonoBehaviour
             cameras[i].gameObject.SetActive(false);
         }
 
-        cameras[(int)camera].gameObject.SetActive(true);
+        if (TempData.isArchipelagoGame && camera == MenuCamera.Main_Menu)
+        {
+            cameras[(int)MenuCamera.Archipelago_Main_Menu].gameObject.SetActive(true);
+        } 
+        else
+        {
+            cameras[(int)camera].gameObject.SetActive(true);
+        }
     }
 
     private void UpdatePointer()

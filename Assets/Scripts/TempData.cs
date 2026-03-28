@@ -17,7 +17,7 @@ public static class TempData
     public static bool camerasDisabled { get; set; }    //Used across the various cameras to determine whether or not the camera is disabled. Is set when an animatronic moves while the player is looking at them.
     public static int playStoryBeat { get; set; }       //Used to play a short one-image cutscene before or after finishing a night.
     public static Sprite screenshot { get; set; }       //Used exclusively to apply an image of the main menu to the newspaper clip cutscene.
-    public static bool hallucinationOverlayPlaying { get; set; } //Used to control volume of the robotvoice
+    public static bool hallucinationOverlayPlaying { get; set; }    //Used to control volume of the robotvoice
     public static bool hallucinationOverlayVisible { get; set; }    //Used to sync the hallucination overlay visibility.
     public static int hallucinationOverlayValue { get; set; }       //Used to sync the hallucination overlay values.
     public static bool manuallyHallucinate { get; set; }            //Used to force the hallucination overlay to play.
@@ -26,4 +26,5 @@ public static class TempData
     public static bool didFullscreenSwitch { get; set; }    //Used to allow the player to switch between fullscreen and windowed mode smoothly.
     public static int windowedWidth { get; set; }           //Used to allow the player to switch between fullscreen and windowed mode smoothly.
     public static int windowedHeight { get; set; }          //Used to allow the player to switch between fullscreen and windowed mode smoothly.
+    public static bool isArchipelagoGame { get; set; }      //Used to denote whether the game is being played in archipelago mode or not.
 }

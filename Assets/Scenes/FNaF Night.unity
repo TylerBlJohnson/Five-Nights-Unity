@@ -352,7 +352,7 @@ GameObject:
   - component: {fileID: 29500898}
   - component: {fileID: 29500897}
   - component: {fileID: 29500896}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LDoorButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -367,8 +367,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29500894}
   m_LocalRotation: {x: -0.06162845, y: -0.70441604, z: 0.70441604, w: -0.06162845}
-  m_LocalPosition: {x: -1.147, y: 0.455, z: -6.09}
-  m_LocalScale: {x: 0.07, y: 1, z: 0.075}
+  m_LocalPosition: {x: 0.041, y: 0.427, z: -0.13}
+  m_LocalScale: {x: 0.04, y: 1, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 102111591}
@@ -395,7 +395,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 29500894}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -450,7 +450,7 @@ GameObject:
   - component: {fileID: 39143220}
   - component: {fileID: 39143219}
   - component: {fileID: 39143218}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: NosePoster
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -465,12 +465,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39143216}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.7310991, y: -8.630011, z: -1.6600094}
-  m_LocalScale: {x: 0.029999992, y: 1, z: 0.03}
+  m_LocalPosition: {x: 0.7790043, y: 0.019983292, z: -1.6600151}
+  m_LocalScale: {x: 0.013500143, y: 1, z: 0.030000007}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1948309206}
-  m_RootOrder: 0
+  m_Father: {fileID: 1900317490}
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 90, y: 0, z: 180}
 --- !u!64 &39143218
 MeshCollider:
@@ -493,7 +493,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39143216}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -640,7 +640,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1900317490}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &86564957
 MonoBehaviour:
@@ -822,7 +822,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 110630562}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.72, z: 132}
+  m_LocalPosition: {x: 0, y: 0, z: 132}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -907,8 +907,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 122062072}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0}
-  m_LocalPosition: {x: 0, y: -0, z: 2.72}
-  m_LocalScale: {x: 1.3999895, y: 1.3999996, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 2.72}
+  m_LocalScale: {x: 1.4, y: 1.4, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1201869155}
@@ -5184,6 +5184,9 @@ MonoBehaviour:
   honkNosePoster: {fileID: 39143216}
   winScreenScreenShot: {fileID: 122062073}
   hallucinationOverlay: {fileID: 1817789249}
+  cylinderCamera: {fileID: 313404125}
+  orthographicCamera: {fileID: 1822681286}
+  cylinderCollider: {fileID: 1217624009}
 --- !u!114 &928820363
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5215,6 +5218,9 @@ MonoBehaviour:
   rightPlane: {fileID: 430176385}
   monitorUpPlane: {fileID: 1357780268}
   monitorDownPlane: {fileID: 763207728}
+  screenEdgeDeadzone: 0.15
+  useLegacyControls: 0
+  useMobileControls: 0
 --- !u!114 &928820365
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5523,6 +5529,11 @@ MonoBehaviour:
 Transform:
   m_CorrespondingSourceObject: {fileID: 6113484162927332232, guid: 2793f3b6a59982d43a4c4d60bf1e7ee8, type: 3}
   m_PrefabInstance: {fileID: 2023315007}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &959627830 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 7922fe63bb341a647baec4ad68a612a4, type: 3}
+  m_PrefabInstance: {fileID: 1511956893}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &1025836436 stripped
 Transform:
@@ -5948,7 +5959,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1900317490}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &1148604176
 MonoBehaviour:
@@ -6403,6 +6414,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 7922fe63bb341a647baec4ad68a612a4, type: 3}
   m_PrefabInstance: {fileID: 1511956893}
   m_PrefabAsset: {fileID: 0}
+--- !u!64 &1217624009
+MeshCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 959627830}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Convex: 0
+  m_CookingOptions: 30
+  m_Mesh: {fileID: -462981019419857548, guid: 7922fe63bb341a647baec4ad68a612a4, type: 3}
 --- !u!1 &1241227347
 GameObject:
   m_ObjectHideFlags: 0
@@ -8098,7 +8123,7 @@ Transform:
   - {fileID: 1947189717}
   - {fileID: 1515527063}
   m_Father: {fileID: 1900317490}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1505157597
 GameObject:
@@ -8240,7 +8265,7 @@ GameObject:
   - component: {fileID: 1505477100}
   - component: {fileID: 1505477099}
   - component: {fileID: 1505477098}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: LLightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8255,8 +8280,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505477096}
   m_LocalRotation: {x: -0.06162845, y: -0.70441604, z: 0.70441604, w: -0.06162845}
-  m_LocalPosition: {x: -1.147, y: -0.563, z: -6.09}
-  m_LocalScale: {x: 0.07, y: 1, z: 0.075}
+  m_LocalPosition: {x: 0.026, y: -0.358, z: -0.15}
+  m_LocalScale: {x: 0.04, y: 1, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 102111591}
@@ -8283,7 +8308,7 @@ MeshRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1505477096}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_DynamicOccludee: 1
@@ -8335,7 +8360,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 7922fe63bb341a647baec4ad68a612a4, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 7922fe63bb341a647baec4ad68a612a4, type: 3}
       propertyPath: m_LocalScale.x
@@ -8396,6 +8421,10 @@ PrefabInstance:
     - target: {fileID: 919132149155446097, guid: 7922fe63bb341a647baec4ad68a612a4, type: 3}
       propertyPath: m_Layer
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 7922fe63bb341a647baec4ad68a612a4, type: 3}
+      propertyPath: m_TagString
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7922fe63bb341a647baec4ad68a612a4, type: 3}
@@ -9025,7 +9054,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1900317490}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!82 &1623361172
 AudioSource:
@@ -9287,7 +9316,7 @@ GameObject:
   - component: {fileID: 1636683604}
   - component: {fileID: 1636683603}
   - component: {fileID: 1636683602}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RLightButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -9302,8 +9331,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1636683600}
   m_LocalRotation: {x: -0.06162845, y: -0.70441604, z: 0.70441604, w: -0.06162845}
-  m_LocalPosition: {x: 1.147, y: -0.563, z: -6.09}
-  m_LocalScale: {x: 0.07, y: 1, z: 0.075}
+  m_LocalPosition: {x: -0.063, y: -0.358, z: -0.18}
+  m_LocalScale: {x: 0.04, y: 1, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 497964081}
@@ -10664,6 +10693,7 @@ Transform:
   - {fileID: 938004309}
   - {fileID: 102111591}
   - {fileID: 497964081}
+  - {fileID: 39143217}
   - {fileID: 1148604175}
   - {fileID: 86564956}
   - {fileID: 1623361171}
@@ -11119,8 +11149,7 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 39143217}
+  m_Children: []
   m_Father: {fileID: 313404122}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -12419,7 +12448,7 @@ GameObject:
   - component: {fileID: 2126927187}
   - component: {fileID: 2126927186}
   - component: {fileID: 2126927185}
-  m_Layer: 6
+  m_Layer: 0
   m_Name: RDoorButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12434,8 +12463,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2126927183}
   m_LocalRotation: {x: -0.06162845, y: -0.70441604, z: 0.70441604, w: -0.06162845}
-  m_LocalPosition: {x: 1.147, y: 0.455, z: -6.09}
-  m_LocalScale: {x: 0.07, y: 1, z: 0.075}
+  m_LocalPosition: {x: -0.046, y: 0.427, z: -0.18}
+  m_LocalScale: {x: 0.04, y: 1, z: 0.05}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 497964081}
@@ -12694,7 +12723,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 5699015727650799453}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.72, z: 121}
+  m_LocalPosition: {x: 0, y: 0, z: 121}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
